@@ -3,6 +3,7 @@
       <mat-card-title>Plan de medios</mat-card-title>
     </mat-card-header>
     <mat-divider></mat-divider>
+    <input type="text" [(ngModel)]="searchText" (keypress)="filter()">
     <table>
       <thead>
         <th class="id-table">Id</th>
@@ -14,7 +15,7 @@
       <tbody>
         <tr *ngFor="let item of dataSource">
           <td class="id-table">{{ item.id +1 }}</td>
-          <td class="plan-table">{{ item.plan }}</td>
+          <td class="plan-table">{{ item.name }}</td>
           <td class="client-table">{{ item.client }}</td>
           <td class="compaign-table">{{ item.compaign }}</td>
           <td class="action-table">

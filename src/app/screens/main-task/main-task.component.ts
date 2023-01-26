@@ -9,6 +9,8 @@ import { ApiService } from 'src/app/services/api.service';
 export class MainTaskComponent implements OnInit {
   dataSource:any = []
 
+  searchText = ""
+
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
@@ -22,5 +24,16 @@ export class MainTaskComponent implements OnInit {
       }
     )
   }
+  
+  filter(){
+    this.dataSource.map((e: any) => {
+      let newArray: any = []
+      if(e.client == this.searchText){
+        newArray.push(e)
+      }
+      console.log(newArray)
+    })
 
+    console.log()
+  }
 }

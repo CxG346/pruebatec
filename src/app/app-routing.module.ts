@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { DuplicateComponent } from './screens/duplicate/duplicate.component';
 import { EditComponent } from './screens/edit/edit.component';
 import { MainTaskComponent } from './screens/main-task/main-task.component';
-import { TableMainComponent } from './screens/table-main/table-main.component';
 
 const routes: Routes = [
   {

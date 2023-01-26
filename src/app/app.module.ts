@@ -13,7 +13,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { TableMainComponent } from './screens/table-main/table-main.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import { EditComponent } from './screens/edit/edit.component';
@@ -30,7 +29,6 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     NavigationComponent,
-    TableMainComponent,
     EditComponent,
     DuplicateComponent,
     MainTaskComponent,

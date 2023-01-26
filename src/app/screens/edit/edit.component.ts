@@ -28,7 +28,14 @@ export class EditComponent implements OnInit {
     this.apiService.getOne(this.id).subscribe(
       (res) => {
         this.dataOne = res
-        console.log(this.dataOne)
+      }
+    )
+  }
+
+  upData(){
+    this.apiService.putData(this.id, this.dataOne[0]).subscribe(
+      (res) => {
+        location.href = '/'
       }
     )
   }

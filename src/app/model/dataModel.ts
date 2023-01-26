@@ -1,6 +1,6 @@
 export interface DataC{
     id?: number,
-    cliente: string,
+    client: string,
     compaign: string,
     name: string,
     note: string,
