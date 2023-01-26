@@ -1,0 +1,28 @@
+.form{
+    width: 100%;
+    height: 100%;
+}
+.example-full-width {
+    width: 100%;
+  }
+
+  .line{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 13px;
+    align-items: flex-end;
+  }
+
+  .form{
+    margin: 21px 0 0 0;
+  }
+
+  mat-card{
+    width: 80vw;
+  }
+
+  mat-card-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }

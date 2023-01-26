@@ -1,0 +1,55 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>Plan de medios</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <table>
+      <thead>
+        <th class="id-table">Id</th>
+        <th class="plan-table">Plan de medio</th>
+        <th class="client-table">Cliente</th>
+        <th class="compaign-table">Compañia</th>
+        <th class="action-table">Acciones</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of dataSource">
+          <td class="id-table">{{ item.id +1 }}</td>
+          <td class="plan-table">{{ item.plan }}</td>
+          <td class="client-table">{{ item.client }}</td>
+          <td class="compaign-table">{{ item.compaign }}</td>
+          <td class="action-table">
+            <button
+              routerLink="/edit/{{item.id}}"
+              mat-icon-button
+              class="example-icon"
+              aria-label="Example icon-button with menu icon"
+            >
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button
+              mat-icon-button
+              class="example-icon"
+              aria-label="Example icon-button with menu icon"
+            >
+              <mat-icon>group</mat-icon>
+            </button>
+            <button
+            routerLink="/duplicate/{{item.id}}"
+              mat-icon-button
+              class="example-icon"
+              aria-label="Example icon-button with menu icon"
+            >
+              <mat-icon>content_copy</mat-icon>
+            </button>
+            <button
+              mat-icon-button
+              class="example-icon"
+              aria-label="Example icon-button with menu icon"
+            >
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </mat-card>

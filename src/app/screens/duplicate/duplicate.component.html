@@ -1,0 +1,48 @@
+<mat-card>
+    <mat-card-title>
+      <span>Duplicar plan de medio</span>
+      <button mat-icon-button><mat-icon>arrow_back</mat-icon></button>
+    </mat-card-title>
+    <mat-divider></mat-divider>
+  
+    <div class="form">
+      <div class="line t-select">
+          <mat-form-field class="left" appearance="fill">
+              <mat-label>Cliente</mat-label>
+              <mat-select disabled>
+                <mat-option value="option">Option</mat-option>
+              </mat-select>
+    
+            </mat-form-field>
+            <mat-form-field class="rigth" appearance="fill">
+              <mat-label>Compañia</mat-label>
+              <mat-select disabled >
+                <mat-option  value="option">Option</mat-option>
+              </mat-select>
+      
+            </mat-form-field>
+      </div>
+      <div class="line">
+          <mat-form-field class="example-full-width left">
+              <mat-label>Nombre</mat-label>
+              <input matInput placeholder="Introduzca nombre">
+            </mat-form-field>
+            <mat-form-field appearance="fill" class="rigth">
+              <mat-label>Nota de prensa</mat-label>
+              <mat-select>
+                <mat-option value="option">Option</mat-option>
+              </mat-select>
+            </mat-form-field>
+      </div>
+      <div>
+          <mat-form-field class="example-full-width left right">
+              <mat-label>Favorite food</mat-label>
+              <input matInput placeholder="Ex. Pizza">
+            </mat-form-field>
+      </div>
+    </div>
+    <mat-card-actions>
+      <button mat-raised-button color="warn">Guardar</button>
+    </mat-card-actions>
+  </mat-card>
+  
